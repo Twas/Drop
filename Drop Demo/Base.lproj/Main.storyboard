@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drop_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zd-3d-3wg">
+                                <rect key="frame" x="171.5" y="629" width="32" height="30"/>
+                                <state key="normal" title="Hide"/>
+                                <connections>
+                                    <action selector="hideAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPp-Fo-LKF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCO-2x-d9F">
+                                <rect key="frame" x="162.5" y="241" width="50" height="30"/>
+                                <state key="normal" title="Default"/>
+                                <connections>
+                                    <action selector="showDefault:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjD-A8-2a5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDN-D1-kzN">
+                                <rect key="frame" x="172.5" y="279" width="30" height="30"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <action selector="showInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5o-gm-h9e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4x-FA-ZmZ">
+                                <rect key="frame" x="158.5" y="317" width="58" height="30"/>
+                                <state key="normal" title="Success"/>
+                                <connections>
+                                    <action selector="showSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AC6-hB-U7C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avF-ip-FLR">
+                                <rect key="frame" x="159" y="355" width="57" height="30"/>
+                                <state key="normal" title="Warning"/>
+                                <connections>
+                                    <action selector="showWarning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDq-LT-jOi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQO-Wm-IhL">
+                                <rect key="frame" x="170.5" y="393" width="34" height="30"/>
+                                <state key="normal" title="Error"/>
+                                <connections>
+                                    <action selector="showError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eTm-La-ecT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mc-X1-pMH">
+                                <rect key="frame" x="169" y="431" width="37" height="30"/>
+                                <state key="normal" title="Color"/>
+                                <connections>
+                                    <action selector="showColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qN0-cn-zsY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHI-bS-VbG">
+                                <rect key="frame" x="151" y="469" width="73" height="30"/>
+                                <state key="normal" title="Actionable"/>
+                                <connections>
+                                    <action selector="showWithAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6K-SK-QtT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9f-nH-Ddc">
+                                <rect key="frame" x="172.5" y="507" width="30" height="30"/>
+                                <state key="normal" title="Blur"/>
+                                <connections>
+                                    <action selector="showBlur:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4p-il-GhF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebp-Zi-kJu">
+                                <rect key="frame" x="142" y="545" width="91" height="30"/>
+                                <state key="normal" title="Custom Drop"/>
+                                <connections>
+                                    <action selector="showCustom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6rJ-7A-Vkw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab8-hD-YBg">
+                                <rect key="frame" x="158" y="583" width="59" height="30"/>
+                                <state key="normal" title="Duration"/>
+                                <connections>
+                                    <action selector="showWithDuration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDJ-jF-S2x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="avF-ip-FLR" firstAttribute="top" secondItem="V4x-FA-ZmZ" secondAttribute="bottom" constant="8" id="1oa-iY-mUM"/>
+                            <constraint firstItem="v9f-nH-Ddc" firstAttribute="top" secondItem="kHI-bS-VbG" secondAttribute="bottom" constant="8" id="3ZD-9y-sUq"/>
+                            <constraint firstItem="Ab8-hD-YBg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8GC-cy-VW8"/>
+                            <constraint firstItem="6zd-3d-3wg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GXu-fS-lMN"/>
+                            <constraint firstItem="Ebp-Zi-kJu" firstAttribute="top" secondItem="v9f-nH-Ddc" secondAttribute="bottom" constant="8" id="JXR-1l-PFe"/>
+                            <constraint firstItem="avF-ip-FLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1y-UP-xN9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6zd-3d-3wg" secondAttribute="bottom" constant="8" id="UPV-dY-d29"/>
+                            <constraint firstItem="3Mc-X1-pMH" firstAttribute="top" secondItem="UQO-Wm-IhL" secondAttribute="bottom" constant="8" id="VZ2-sT-J68"/>
+                            <constraint firstItem="3Mc-X1-pMH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XPK-gr-4iz"/>
+                            <constraint firstItem="v9f-nH-Ddc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xy1-Tg-WtO"/>
+                            <constraint firstItem="V4x-FA-ZmZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ahX-LU-5Ef"/>
+                            <constraint firstItem="Ab8-hD-YBg" firstAttribute="top" secondItem="Ebp-Zi-kJu" secondAttribute="bottom" constant="8" id="fXO-9K-uBQ"/>
+                            <constraint firstItem="kHI-bS-VbG" firstAttribute="top" secondItem="3Mc-X1-pMH" secondAttribute="bottom" constant="8" id="gsK-Ue-tbx"/>
+                            <constraint firstItem="6zd-3d-3wg" firstAttribute="top" secondItem="Ab8-hD-YBg" secondAttribute="bottom" constant="16" id="j4y-DX-dCO"/>
+                            <constraint firstItem="fDN-D1-kzN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYb-Sf-QuS"/>
+                            <constraint firstItem="kHI-bS-VbG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lr1-oo-M2k"/>
+                            <constraint firstItem="V4x-FA-ZmZ" firstAttribute="top" secondItem="fDN-D1-kzN" secondAttribute="bottom" constant="8" id="lzI-LD-c1s"/>
+                            <constraint firstItem="fDN-D1-kzN" firstAttribute="top" secondItem="WCO-2x-d9F" secondAttribute="bottom" constant="8" id="qqz-i4-zeA"/>
+                            <constraint firstItem="WCO-2x-d9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tAo-7s-Nlg"/>
+                            <constraint firstItem="UQO-Wm-IhL" firstAttribute="top" secondItem="avF-ip-FLR" secondAttribute="bottom" constant="8" id="vAy-Sm-dJh"/>
+                            <constraint firstItem="UQO-Wm-IhL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOY-pf-7dX"/>
+                            <constraint firstItem="Ebp-Zi-kJu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zYo-Bu-HUG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
