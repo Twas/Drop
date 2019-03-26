@@ -12,15 +12,15 @@ import UIKit
 
 public extension Drop {
     
-    public class func down(_ status: String, type: DropType = .default, duration: Double = Defaults.dropDuration, action: DropAction? = nil) {
+    class func down(_ status: String, type: DropType = .default, duration: Double = Defaults.dropDuration, action: DropAction? = nil) {
         show(status, type: type, duration: duration, action: action)
     }
     
-    public class func down(_ status: String, type: DropAppearance, duration: Double = Defaults.dropDuration, action: DropAction? = nil) {
+    class func down(_ status: String, type: DropAppearance, duration: Double = Defaults.dropDuration, action: DropAction? = nil) {
         show(status, type: type, duration: duration, action: action)
     }
     
-    public class func upAll() {
+    class func upAll() {
         guard let window = UIApplication.shared.keyWindow else { return }
         
         let drops = window.subviews.compactMap({ $0 as? Drop })

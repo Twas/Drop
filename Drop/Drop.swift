@@ -87,6 +87,7 @@ public final class Drop: UIView {
             startTop = 0
             scheduleUpTimer(2.0)
         case .possible: break
+        @unknown default: break
         }
     }
     
