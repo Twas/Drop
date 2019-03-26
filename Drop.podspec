@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Drop"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Lightweight library to display drop alerts."
   s.homepage     = "https://github.com/Twas/Drop"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/EugeneLeychenko"
 
   s.platform     = :ios
-  s.swift_version = "4.2"
+  s.swift_version = "5"
   s.ios.deployment_target = '10.0'
   s.framework  = "UIKit"
   s.requires_arc = true
