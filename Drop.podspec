@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Drop"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Lightweight library to display drop alerts."
   s.homepage     = "https://github.com/Twas/Drop"
   s.license      = { :type => "MIT", :file => "LICENSE" }
